@@ -9,7 +9,7 @@ import jakarta.ws.rs.core.MediaType
 
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
-@Consumes(value=[])
+@Consumes(value = [])
 @RunOnVirtualThread
 class StubResource {
     @GET
