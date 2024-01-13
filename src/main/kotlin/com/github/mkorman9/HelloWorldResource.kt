@@ -9,7 +9,9 @@ import jakarta.ws.rs.core.MediaType
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(value = [])
-class StubResource {
+class HelloWorldResource {
     @GET
-    fun getStub() = "stub"
+    fun getHelloWorld() = mapOf(
+        Pair("hello", "world")
+    )
 }
